@@ -1,0 +1,65 @@
+name: instagram_clone_application
+description: A new Flutter project.
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_staggered_grid_view: ^0.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - images/
+
+ 
+  fonts:
+    - family: Gilroy-Regular
+      fonts:
+        - asset: fonts/GilroyRegular.ttf
+          weight: 400
+
+
+  
+    - family: Gilroy-Medium
+      fonts:
+        - asset: fonts/GilroyMedium.ttf
+          weight: 500
+
+  
+    - family: Gilroy-Bold
+      fonts:
+        - asset: fonts/GilroyBold.ttf
+          weight: 700
+
+  
+    - family: Gilroy-ExtraBold
+      fonts:
+        - asset: fonts/GilroyExtraBold.ttf   
+          weight: 800     
+
+  
+    - family: Gilroy-Heavy
+      fonts:
+        - asset: fonts/GilroyHeavy.ttf
+          weight: 900
+
+  
+    - family: Shabnam-Medium
+      fonts:
+        - asset: fonts/ShabnamMedium.ttf   
+          weight: 500     
