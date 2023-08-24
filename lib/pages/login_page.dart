@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone_application/consts/colors.dart';
-import 'package:instagram_clone_application/pages/home_page.dart';
+import 'package:instagram_clone_application/pages/switch_account_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -121,10 +121,10 @@ class _LoginPageState extends State<LoginPage> {
                     height: 46,
                     child: ElevatedButton(
                       onPressed: () {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => HomePage(),
+                            builder: (context) => SwitchAccountPage(),
                           ),
                         );
                       },

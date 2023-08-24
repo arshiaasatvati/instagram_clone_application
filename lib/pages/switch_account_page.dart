@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:instagram_clone_application/consts/colors.dart';
+import 'package:instagram_clone_application/pages/main_page.dart';
 
 class SwitchAccountPage extends StatelessWidget {
   const SwitchAccountPage({super.key});
@@ -82,7 +83,14 @@ class SwitchAccountPage extends StatelessWidget {
                                   style: Theme.of(context)
                                       .elevatedButtonTheme
                                       .style,
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => MainPage(),
+                                      ),
+                                    );
+                                  },
                                   child: Text(
                                     'Confirm',
                                   ),
